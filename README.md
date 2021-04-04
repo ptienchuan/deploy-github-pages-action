@@ -1,2 +1,3 @@
-# gh-action-deploy-gh-pages
+# Deploy Github Pages action
+
 Github Action to deploy GitHub Pages

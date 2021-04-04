@@ -1,0 +1,4 @@
+echo $SOURCE_DIRECTORY
+echo $TARGET_BRANCH
+echo $USER_NAME
+echo $USER_EMAIL

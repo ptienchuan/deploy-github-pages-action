@@ -1,0 +1,30 @@
+name: 'Deploy Github Pages'
+description: 'Github Action to deploy Github Pages automatically'
+inputs:
+  source-directory:
+    description: '[Optional] Determine the directory contains source code. Defaults to "docs"'
+    default: 'docs'
+    required: false
+  target-branch:
+    description: '[Optional] Set target branch name for Github Pages. Defaults to "gh-pages"'
+    default: 'gh-pages'
+    required: false
+  user-name:
+    description: '[Optional] Set author of deploying commit. Defaults to ""'
+    default: 'github-actions[bot]'
+    required: false
+  user-email:
+    description: '[Optional] Set author of deploying commit. Defaults to ""'
+    default: 'github-action[bot]@noreply.github.com'
+    required: false
+
+runs:
+  using: "composite"
+  steps:
+    - run: $GITHUB_ACTION_PATH/start.sh
+      shell: bash
+      env:
+        SOURCE_DIRECTORY: ${{ inputs.source-directory }}
+        TARGET_BRANCH: ${{ inputs.target-branch }}
+        USER_NAME: ${{ inputs.user-name }}
+        USER_EMAIL: ${{ inputs.user-email }}
