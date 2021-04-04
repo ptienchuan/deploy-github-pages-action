@@ -41,7 +41,7 @@ As above, the Github Action will:
 
 #### Using custome inputs
 
-You can set the inputs to describe the configurations of your project
+You can set the inputs match with the configurations of your project
 
 See more about [Input description](#input)
 
@@ -93,9 +93,9 @@ The action will NOT work if this env is missed
 
 All of these inputs are **optional**
 
-| Name               | Default                                 | Description |
-| :----------------- | :-------------------------------------- | :---------- |
-| `source-directory` | `docs`                                  |             |
-| `target-branch`    | `gh-pages`                              |             |
-| `user-name`        | `github-action[bot]`                    |             |
-| `user-email`       | `github-action[bot]@noreply.github.com` |             |
+| Name               | Default                                 | Description                                                     |
+| :----------------- | :-------------------------------------- | :-------------------------------------------------------------- |
+| `source-directory` | `docs`                                  | The source directory which contains the source code after built |
+| `target-branch`    | `gh-pages`                              | The git branch where Github Pages be built from                 |
+| `user-name`        | `github-action[bot]`                    | The name be used for author of deploy commit                    |
+| `user-email`       | `github-action[bot]@noreply.github.com` | The email be used for author of deploy commit                   |
