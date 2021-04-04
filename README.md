@@ -24,7 +24,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-As above, the Github Action will:
+As above, the Github Action will do:
 
 1. Build source code:
 
@@ -64,7 +64,7 @@ jobs:
           user-email: "deploy[bot]@noreply.github.com"
 ```
 
-As above, the Github Action will:
+As above, the Github Action will do:
 
 1. Build source code:
 
