@@ -1,6 +1,6 @@
 # Deploy Github Pages action
 
-The Github Action for building and pushing the source code to a Github Pages branch.
+The Github Action for building and deploying the source code to a Github Pages branch.
 
 ## Example usage
 
